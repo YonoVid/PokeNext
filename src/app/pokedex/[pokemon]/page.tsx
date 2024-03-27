@@ -42,7 +42,7 @@ export default function PokemonPage({
                     <button
                         className="select-none text-white font-medium text-center text-lg py-2 px-5 rounded bg-pokemon-orange click:outline-2"
                         type="button"
-                        onClick={() => router.push("/pokedex")}
+                        onClick={() => router.back()}
                     >
                         Explore more Pokémon
                     </button>
