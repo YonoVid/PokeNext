@@ -31,3 +31,13 @@ export const formatId = (value?: number): string => {
 
     return "#" + newValue.padStart(4, "0");
 };
+
+export const cleanString = (value?: string): string => {
+    if (!value) {
+        value = "";
+    }
+
+    const newValue = value.replaceAll(/[\u000C/\n]/g, " ");
+
+    return newValue;
+};

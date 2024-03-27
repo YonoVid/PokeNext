@@ -8,7 +8,7 @@ export type Pokemon = {
     is_default: boolean; //Set for exactly one Pokémon used as the default for each species.
     order: number; //Order for sorting. Almost national order, except families are grouped together.
     weight: number; //The weight of this Pokémon in hectograms.
-    abilitites: Array<PokemonAbility>; //A list of abilities this Pokémon could potentially have.
+    abilities: Array<PokemonAbility>; //A list of abilities this Pokémon could potentially have.
     forms: Array<NamedAPIResource>; //A list of forms this Pokémon can take on.
     game_indices: VersionGameIndex; //A list of game indices relevent to Pokémon item by generation.
     held_items: Array<PokemonHeldItem>; //A list of items this Pokémon may be holding when encountered.
@@ -93,4 +93,9 @@ export type PokemonStat = {
 export type PokemonType = {
     slot: number; // The order the Pokémon's types are listed in.
     type: NamedAPIResource; // The type the referenced Pokémon has.
+};
+
+export type GenerationGameIndex = {
+    game_index: number; // The internal id of an API resource within game data.
+    generation: NamedAPIResource; // The generation relevent to this game index.
 };
