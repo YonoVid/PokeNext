@@ -9,7 +9,7 @@ import { NamedAPIResource } from "@/model/api/resource";
 import { addPokemon } from "@/lib/redux/features/pokedex";
 import { useAppDispatch, useAppSelector } from "@/lib/redux/hooks";
 
-export default function Pokedex() {
+export default function PokedexPage() {
     const [pokemonList, setPokemonList] = useState<Array<NamedAPIResource>>([]);
     // Stored data
     const dexList = useAppSelector((state) => state.dex.value);

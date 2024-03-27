@@ -8,20 +8,20 @@ export type PokemonStatsProps = {
     stats: Array<PokemonStat>;
 };
 
-export default function PokemonStats(props: PokemonStatsProps) {
+export default function PokemonStatsComponent(props: PokemonStatsProps) {
     return (
         <div className="my-4 p-5 rounded bg-pokemon-gray">
             <h2 className="text-xl text-stone-800">Stats</h2>
             <div className="my-4 grid grid-cols-6 gap-2 h-[80%]">
                 {props?.stats?.map((value, index) => (
-                    <PokemonStat key={index} stat={value} />
+                    <PokemonStatComponent key={index} stat={value} />
                 ))}
             </div>
         </div>
     );
 }
 
-export function PokemonStat(props: { stat: PokemonStat }) {
+export function PokemonStatComponent(props: { stat: PokemonStat }) {
     const { stat } = props;
 
     const boxColor: Record<string, string> = {

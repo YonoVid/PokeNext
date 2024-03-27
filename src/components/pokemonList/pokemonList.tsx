@@ -5,7 +5,7 @@ import PokemonListItem from "./pokemonListItem";
 
 export type PokemonListProps = { list: Array<NamedAPIResource> };
 
-export default function PokemonList(props: PokemonListProps) {
+export default function PokemonListComponent(props: PokemonListProps) {
     const { list } = props;
 
     return (

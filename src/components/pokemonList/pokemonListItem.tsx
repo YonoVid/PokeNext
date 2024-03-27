@@ -16,7 +16,7 @@ import PokemonTypes from "../pokemonData/pokemonTypes";
 
 export type PokemonListItemProps = NamedAPIResource;
 
-export default function PokemonListItem(props: PokemonListItemProps) {
+export default function PokemonListItemComponent(props: PokemonListItemProps) {
     const { name } = props;
     const [data, setData] = useState<Partial<Pokemon>>();
 

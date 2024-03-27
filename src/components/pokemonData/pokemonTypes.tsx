@@ -9,7 +9,7 @@ export type PokemonTypesProps = {
     size?: "big" | "small";
 };
 
-export default function PokemonTypes(props: PokemonTypesProps) {
+export default function PokemonTypesComponent(props: PokemonTypesProps) {
     const { size, types } = props;
 
     const pokemonTypeColorVariants: Record<string, string> = {

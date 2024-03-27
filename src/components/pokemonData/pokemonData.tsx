@@ -23,7 +23,7 @@ export type PokemonListItemProps = {
     pokemonName: string;
 };
 
-export default function PokemonData(props: PokemonListItemProps) {
+export default function PokemonDataComponent(props: PokemonListItemProps) {
     const [pokemon, setPokemon] = useState<Partial<Pokemon>>();
     const [species, setSpecies] = useState<Partial<PokemonSpecies>>();
     const [weakness, setWeakness] = useState<Array<string>>();

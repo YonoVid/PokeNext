@@ -8,7 +8,11 @@ import { Pokemon } from "@/model/api/pokemon";
 import PokemonData from "@/components/pokemonData/pokemonData";
 import { getPokemonData } from "@/lib/api/pokemon";
 
-export default function Pokemon({ params }: { params: { pokemon: string } }) {
+export default function PokemonPage({
+    params,
+}: {
+    params: { pokemon: string };
+}) {
     const { pokemon } = params;
 
     const router = useRouter();
